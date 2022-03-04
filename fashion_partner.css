@@ -1,0 +1,756 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*=========================================================================*/
+.header {
+    width: 100%;
+    height:60px;
+    padding: 3px 3px;
+    background: rgba(250,235,215, 0.4);
+    position: relative;
+    Position:fixed;
+    z-index: 2;		
+    border-bottom: 1px solid #ddd;	
+    transition: all 1s;
+}
+
+.header.sticky {
+    position: fixed;
+    background: white;
+    border-bottom: 1px solid #000;
+}
+
+.header__list{
+    height:100%;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto;
+	
+}
+
+
+/*---------------------------------------------*/
+.header__list a {
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0px 5px;
+    font-size: 20px;
+    height: 100%;
+    color: #4e4a57;
+    cursor: pointer;
+    Text-decoration: none;
+}
+
+.header__system a:hover {
+    color: #a60505;
+    background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+.header__logo {
+    width: 90px;
+    height: 43px;
+    cursor:  pointer;
+}
+
+.header__system{
+    display: block;
+}
+
+.header__list li img{ 
+    padding-left: 5px;
+    Box-shadow:0 0 10px rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.english,
+.korea{
+    width: 30px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo__img {
+    width:100%;
+    position: absolute;
+    top:-20px;
+}
+
+/*--------------------btn_form_sign-up-------------------*/
+
+.btn__form__sign_up__web{
+    background-image: url(/img/banner-hop-tac-cung-smart-fashion-1.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.form__sign_up__web__image{
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form__sign_up__web__image li{
+    background-image: url(/img/dd-08.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.form__sign_up_web{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.form__sign_up_web__content{
+    width: 50%;
+}
+
+.sign_up__web__title{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.sign_up__web__name_brand{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.input__sign_up__web__name_brand{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: rgba(255 ,228 ,181,0);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 1.5px solid #ffffff8c;
+    
+}
+
+.input__sign_up__web__name_brand:hover{
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.input__sign_up__web__name_brand:focus{
+    color: #fff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.sign_up__web__website{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.input__sign_up__web__website{
+    width: 100%;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: rgba(255 ,228 ,181,0);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 1.5px solid #ffffff8c;
+}
+
+.input__sign_up__web__website:hover{
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.input__sign_up__web__website:focus{
+    color: #fff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.sign_up__web__representative{
+    
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.input__sign_up__web__representative{
+    width: 100%;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: rgba(255 ,228 ,181,0);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 1.5px solid #ffffff8c;
+}
+
+.input__sign_up__web__representative:hover{
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.input__sign_up__web__representative:focus{
+    color: #fff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.sign_up__web__email{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.input__sign_up__web__email{
+    width: 100%;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: rgba(255 ,228 ,181,0);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 1.5px solid #ffffff8c;
+}
+
+.input__sign_up__web__email:hover{
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.input__sign_up__web__email:focus{
+    color: #fff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.sign_up__web__phone{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.input__sign_up__web__phone{
+    width: 100%;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: rgba(255 ,228 ,181,0);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    border-bottom: 1.5px solid #ffffff8c;
+}
+
+.input__sign_up__web__phone:hover{
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+.input__sign_up__web__phone:focus{
+    color: #fff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1.5px solid #e209098c;
+}
+
+
+.btn__sign_up__web{
+    margin:20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    background-color: #a60505;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn__sign_up__web:hover{
+background-color:#f44336;
+}
+
+/*-------------ctn__solution_and_form-------*/
+.ctn__solution{
+
+}
+
+
+.ctn__solution__title{
+    width: 100%;
+    margin: 55px 0;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ctn__solution__element{
+    height: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: none;
+    margin: 0 1%;
+}
+
+.ctn__solution__element ul{
+    width: 22%;
+    margin: 0 1%;
+}
+
+.ctn__solution__image{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    list-style: none;
+    
+}
+
+.ctn__solution__image h3{
+    
+    width:20%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ctn__solution__image h3:hover{
+    cursor: pointer;
+}
+
+.ctn__solution__title-small{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+}
+
+.ctn__solution__title-small:hover{
+    color:#a60505;
+    cursor: pointer;
+}
+
+.ctn__solution__content{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+    list-style: none;
+    width:90%;
+    line-height: 1.5;
+}
+
+/*-----------ctn__form-----------------*/
+
+/*copy phần solution*/
+
+/*---------------footer-------------------*/
+
+.ctn__footer {
+    width: 100%;
+    height:500px;
+    background-color: #333;
+    list-style:none;
+}
+
+.ctn__footer__content {
+    width: 90%;
+    height: 100%;
+    padding: 40px 0 15px;
+    margin: 0 auto;
+}
+
+.ctn__footer .footer__title {
+    color: #f4efeb;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+} 
+/*---------------------------------------------*/
+.ctn__footer .footer__title_text {
+    width: 60%;
+}
+
+.ctn__footer .footer__icon {
+    width:20%;
+}
+
+/*----------------------------------------------*/
+.footer__sign_up{
+    margin:35px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.ctn__footer .sign_up__title {
+    color: #fff;
+    background-color: #a60505;
+    font-size: 18px;
+    padding: 10px 35px;
+    width: 136px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.ctn__footer .sign_up__title:hover {
+    cursor: pointer;
+}
+
+/*------------------sign_up_title-----------------*/
+.model{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/*.model.open khác .model .open vì nó ưu tiên*/
+.model.open{
+    display: flex;
+}
+
+.model .ctn__model {
+    width: 60%;
+    height: 100%;
+    background-image: url(/img/retro1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.ctn__model__header {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 0 78px;
+    padding-left: 190px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.model .ti-close {
+    
+    padding: 5px;
+}
+
+.model .ti-close:hover {
+    background-color: rgba(181, 181, 181, 0.5);
+    cursor: pointer;
+}
+
+.model .ctn__model__input{
+    display: grid;
+    height: 54%;
+}
+::placeholder{
+    color: white;
+}
+.model .ctn__model__input input{
+    margin: 10px 15%;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: rgba(255, 228 ,181 , 0.6);
+}
+
+.ctn__model__commit {
+    padding: 5px 4px;
+    font-size: 16px;
+    margin: 10px 15%;
+    background-color: rgba(255, 228 ,181 , 0.8);
+    border-radius: 10px;
+}
+
+.ctn__model__button{
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.ctn__model__button button {
+    margin: 0 20px;
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(255, 228 ,181);
+}
+
+.model .button__comeback {
+    cursor: pointer;
+}
+
+.ctn__model__connect {
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.connect__google,
+.connect__inta,
+.connect__facebook{
+    margin: 0 5px;
+}
+
+.instagram{
+    color: white;
+    width: 33px;
+    height:33px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+}
+
+.ti-google {
+    color: white;
+    background-color: #d24736;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.connect__facebook .ti-facebook{
+    color: white;
+    background-color: #4580d7;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/*------------------footer-menu--------------------*/
+.footer__menu {
+    display: flex;
+    justify-content: center;
+}
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px  20px;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.footer__menu a:hover {
+    color: #a60505;
+   	background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+/*--------app--footer-------------------------------*/
+.footer__app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0 70px;
+}
+
+.app__store__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+
+.app__googleplay__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+
+
+/*---------footer__address-------------*/
+.footer__address{
+    width:100%;
+}
+
+.footer__address__text {
+    color: white;
+    width:45%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+/*---------btn-backtop-------------*/
+.backtop{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+
+
+}
+
+.backtop ul{
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/backtop.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    margin: 10px 0;
+}
+
+
+/*=============loading==================*/
+.ctn__loading__body {
+    position: fixed;
+    top:0;
+    right:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(181, 181, 181, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.ctn__loading__body.open__load {
+    animation-delay: 5s;
+    display: flex;
+}
+
+.ctn__loading {
+    animation: #fff linear 4s infinite;
+    
+    background-image: url(/img/F5S.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+.ctn__loading__content {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 14px solid #00CCFF;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate1 linear 2s infinite;
+}
+
+.ctn__loading__content::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 10px solid aquamarine;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate2 linear 2s infinite;
+}
+
+
+
+@keyframes changecolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

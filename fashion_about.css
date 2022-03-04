@@ -1,0 +1,676 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: serif;
+}
+/*=========================================================================*/
+.header {
+    width: 100%;
+    height:60px;
+    padding: 3px 3px;
+    background: rgba(250,235,215, 0.8);
+    z-index: 2;		
+    border-bottom: 1px solid #ddd;	
+    transition: all 1s;
+}
+
+.header.sticky {
+    position: fixed;
+    background: white;
+    border-bottom: 1px solid #000;
+}
+
+.header__list{
+    height:100%;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto;
+	
+}
+
+
+/*---------------------------------------------*/
+.header__list a {
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0px 5px;
+    font-size: 20px;
+    height: 100%;
+    color: #4e4a57;
+    cursor: pointer;
+    Text-decoration: none;
+}
+
+.header__system a:hover {
+    color: #a60505;
+    background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+.header__logo {
+    width: 90px;
+    height: 43px;
+    cursor:  pointer;
+}
+
+.header__system{
+    display: block;
+}
+
+.header__list li img{ 
+    padding-left: 5px;
+    Box-shadow:0 0 10px rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.english,
+.korea{
+    width: 30px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo__img {
+    width:100%;
+    position: absolute;
+    top:-20px;
+}
+/*=======================about__title===================*/
+.about__title{
+    background-image: url(/img/anh2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 515px;
+    position: relative;
+}
+
+.about__title__img {
+    padding: 10px;
+    background-color: rgba(245,245,245,0.5);
+    font-size: 50px;
+    border-radius: 20px;
+    color:#4e4a57;
+    list-style: none;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+/*========================F5S__content===================*/
+.F5S__content {
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-color: #f4efeb;
+}
+
+.F5S__content__left{
+    width:40%;
+    height:100%;
+    padding: 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.F5S__content__left img{
+    height: 80%;
+    background-repeat: no-repeat;
+    padding: 0 0;
+    margin: 40px 20px;
+    background-size: 100%;
+    position: absolute;
+    animation-name: F5Simage;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: normal;
+}
+
+@keyframes F5Simage {
+    0%  {left:0px;}
+    25% {left: -200px}
+    50% {left:-400px;}
+    75%  {left:-600px;}
+    100% {left: 0px;}
+}
+
+.F5S__content__right{
+    width:40%;
+    height:100%;
+    padding: 80px 0;
+    margin: 0 20px;
+}
+
+.F5S__content__title{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #333;
+}
+
+.F5S__content__text1 {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    color:#523c68;
+    padding:10px;
+}
+
+.F5S__content__text2{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    color:#523c68;
+    padding: 10px;
+}
+
+/*=============inner - item*/
+
+.inner__item {
+    background-image: url(/img/cong-nghe-smart-fashion.jpg);
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    display: flex;
+    justify-content:flex-end;
+    padding: 55px 0;
+}
+
+.inner__item__content{
+    color: #ddd;
+    width: 60%;
+    margin: 0 5% 0 5%;
+}
+
+.inner__item .inner__item__title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.inner__item p {
+    font-size: 20px;
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+}
+
+/*btn__mission_and_vision--------------------*/
+.btn__mission_and_vision {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    padding:55px 0;
+    background-color: #CCFFFF;
+} 
+
+.btn__mission_and_vision__left {
+    width: 40%;
+    
+}
+
+.btn__mission_and_vision__right{
+    width: 40%;
+    
+    background-image: url(/img/su-menh-va-tam-nhin-2.png);
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.btn__mission_and_vision__title {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.btn__mission_and_vision__content {
+    margin: 0 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn__mission_and_vision__image {
+
+}
+
+/*----------------address-----------------------------*/
+
+.btn__address{
+    padding: 55px 0;
+    margin: 0 120px;
+    height: 460px;
+}
+
+.btn__address__title{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+}
+
+.btn__address__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.btn__address__block{
+    height: 100%;
+    width:50%;
+
+}
+
+/*Ý tưởng bth để chế độ display: none
+khi hơ vào sẽ bật chế độ display:block*/
+.btn__address__image__vietnam{
+    background-image: url(/img/hue1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 60%;
+    height: 80%;
+}
+
+.btn__address__vietnam__content{
+    color: rgb(233, 212, 212);
+    line-height: 1.8;
+    font-size: 40px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0;
+
+}
+
+.btn__address__image__korea{
+    background-image: url(/img/korea1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 60%;
+    height: 80%;
+}
+
+.btn__address__korea__content{
+    color: rgb(233, 212, 212);
+    line-height: 1.8;
+    font-size: 40px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0;
+}
+
+/*---------------footer-------------------*/
+
+.ctn__footer {
+    width: 100%;
+    height:500px;
+    background-color: #333;
+    list-style:none;
+}
+
+.ctn__footer__content {
+    width: 90%;
+    height: 100%;
+    padding: 40px 0 15px;
+    margin: 0 auto;
+}
+
+.ctn__footer .footer__title {
+    color: #f4efeb;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+} 
+/*---------------------------------------------*/
+.ctn__footer .footer__title_text {
+    width: 60%;
+}
+
+.ctn__footer .footer__icon {
+    width:20%;
+}
+
+/*----------------------------------------------*/
+.footer__sign_up{
+    margin:35px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.ctn__footer .sign_up__title {
+    color: #fff;
+    background-color: #a60505;
+    font-size: 18px;
+    padding: 10px 35px;
+    width: 136px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.ctn__footer .sign_up__title:hover {
+    cursor: pointer;
+}
+
+/*------------------sign_up_title-----------------*/
+.model{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/*.model.open khác .model .open vì nó ưu tiên*/
+.model.open{
+    display: flex;
+}
+
+.model .ctn__model {
+    width: 60%;
+    height: 100%;
+    background-image: url(/img/retro1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.ctn__model__header {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 0 78px;
+    padding-left: 190px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.model .ti-close {
+    
+    padding: 5px;
+}
+
+.model .ti-close:hover {
+    background-color: rgba(181, 181, 181, 0.5);
+    cursor: pointer;
+}
+
+.model .ctn__model__input{
+    display: grid;
+    height: 54%;
+}
+::placeholder{
+    color: white;
+}
+.model .ctn__model__input input{
+    margin: 10px 15%;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: rgba(255, 228 ,181 , 0.6);
+}
+
+.ctn__model__commit {
+    padding: 5px 4px;
+    font-size: 16px;
+    margin: 10px 15%;
+    background-color: rgba(255, 228 ,181 , 0.8);
+    border-radius: 10px;
+}
+
+.ctn__model__button{
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.ctn__model__button button {
+    margin: 0 20px;
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(255, 228 ,181);
+}
+
+.model .button__comeback {
+    cursor: pointer;
+}
+
+.ctn__model__connect {
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.connect__google,
+.connect__inta,
+.connect__facebook{
+    margin: 0 5px;
+}
+
+.instagram{
+    color: white;
+    width: 33px;
+    height:33px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+}
+
+.ti-google {
+    color: white;
+    background-color: #d24736;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.connect__facebook .ti-facebook{
+    color: white;
+    background-color: #4580d7;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/*------------------footer-menu--------------------*/
+.footer__menu {
+    display: flex;
+    justify-content: center;
+}
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px  20px;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.footer__menu a:hover {
+    color: #a60505;
+   	background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+/*--------app--footer-------------------------------*/
+.footer__app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0 70px;
+}
+
+.app__store__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+
+.app__googleplay__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+
+
+/*---------footer__address-------------*/
+.footer__address{
+    width:100%;
+}
+
+.footer__address__text {
+    color: white;
+    width:45%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*---------btn-backtop-------------*/
+.backtop{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+
+
+}
+
+.backtop ul{
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/backtop.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    margin: 10px 0;
+}
+
+/*=============loading==================*/
+.ctn__loading__body {
+    position: fixed;
+    top:0;
+    right:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(181, 181, 181, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.ctn__loading__body.open__load {
+    animation-delay: 5s;
+    display: flex;
+}
+
+.ctn__loading {
+    animation: #fff linear 4s infinite;
+    
+    background-image: url(/img/F5S.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+.ctn__loading__content {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 14px solid #00CCFF;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate1 linear 2s infinite;
+}
+
+.ctn__loading__content::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 10px solid aquamarine;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate2 linear 2s infinite;
+}
+
+
+
+@keyframes changecolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+
+
+
+

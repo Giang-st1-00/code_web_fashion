@@ -1,0 +1,1055 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*=========================================================================*/
+.header {
+    width: 100%;
+    height:60px;
+    padding: 0px 3px;
+    background: rgba(250,235,215, 0.5);
+    position: relative;
+    Position:fixed;
+    z-index: 2;
+    border-bottom: 1px solid #ddd;	
+    transition: all 1s;
+}
+
+.header.sticky {
+    background: white;
+    border-bottom: 1px solid #000;
+    
+}
+
+.header__list{
+    height:100%;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+/*---------------------------------------------*/
+.header__list a {
+    display: inline-block;
+    padding: 18px 15px;
+    margin: -4px 5px;
+    
+    font-size: 20px;
+    height: 100%;
+    color: #4e4a57;
+    cursor: pointer;
+    Text-decoration: none;
+}
+
+.header__system a:hover {
+    color: #a60505;
+   	background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+
+
+.header__logo {
+    width: 90px;
+    height: 100%;
+    cursor:  pointer;
+}
+
+.header__system{
+    display: block;
+}
+
+.header__list li img{ 
+    padding-left: 5px;
+    Box-shadow:0 0 10px rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.vietnam,
+.english,
+.korea{
+    width: 30px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo__img {
+    width:100%;
+    position: absolute;
+    top: 0px;
+}
+
+
+/*-------------------------------------------------*/
+.header__app{
+    background-image: url('/img/VirtualDressingRoom-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 470px;
+    color:aliceblue;
+    list-style: none;
+    position: relative;
+    padding-bottom: 94px;
+    padding-left: 70px;
+    padding-right: 101px;
+    padding-top: 200px;
+    animation-name: example;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: normal;
+}
+
+@keyframes example {
+    0%  {background-image: url(/img/Home-01.png);background-size: 120%;}
+    50% {background-image: url(/img/VirtualDressingRoom-1.png);}
+    75%  {background-image: url(/img/Home-01.png);background-size: 120%;}
+    100% {background-image: url(/img/VirtualDressingRoom-1.png);}
+}
+
+.app__content__box {
+    height:200px;
+}
+
+.header__app__image{
+    width: 526px;
+    position: absolute;
+    animation-name: header_app;
+    animation-duration: 4s;
+    animation-timing-function: normal;
+    top:40%;
+    left:8%;
+}
+
+@keyframes header_app {
+    0% {
+        top:40%;
+        left: -10%;
+    }
+    100%{
+        top:40%;
+        left:8%;
+    }
+}
+
+.header__app__image .app__content{
+    font-size: 45px;
+  
+}
+
+.header__app__image .app__title__content {
+    font-size: 15px;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.header__app__image .app__store__googleplay {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0%;
+    padding: 0 70px;
+}
+
+.header__app__image .app__store {
+    height: 42px;
+    width: auto;
+}
+
+.header__app__image .app__store:hover {
+    cursor: pointer;
+}
+
+.header__app__image .app__googleplay {
+    height: 42px;
+    width: auto;
+}
+
+.header__app__image .app__googleplay:hover {
+    cursor: pointer;
+}
+
+/*=========================INTRODUCE==========================================*/
+
+.introduce {
+    padding: 20px 0;
+    height: 750px;
+    display: flex;
+    list-style: none;
+}
+/*-------content------------*/
+.introduce__content {
+    width:60%;
+  
+    height: 100%;
+}
+
+
+
+/*-------content_title--------*/
+.content__title__AI {
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+/*---------introduce_info--------*/
+.introduce__info{
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------analysis--------------*/
+
+.content__analysis {
+    width:280px;
+    margin: 0 auto;
+    
+}
+
+.content__analysis__image{
+    background-image: url(/img/deep-learning-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    Object-fit:cover;
+    width:80px;
+    height:94px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.content__analysis__title,
+.content__analysis__info {
+    text-align: center;
+}
+
+.content__analysis__title{ 
+    font-size: 20px;
+    font-weight: 700;
+    padding: 22px;
+}
+
+.content__analysis__info {
+    Line-height: 1.6;
+}
+
+
+
+/*-------content__application-------*/
+
+.content__application {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.content__application__image{
+    background-image: url(/img/thi-giac-may-tinh-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    Object-fit:cover;
+    width:80px;
+    height:94px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.content__analysis__title,
+.content__analysis__info {
+    text-align: center;
+}
+
+/*---------image--------------*/
+.introduce__image{
+    width:40%;
+    height: 100%;
+    position: relative;
+}
+
+.introduce__image__AI {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/banner-cong-nghe-ai.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    Object-fit:cover;
+}
+
+.introduce__image__phone {
+    position: absolute;
+    top: 44px;
+    left: -236px;
+    width: 500px;
+    height: 80%;
+    background-image: url(/img/dien-thoai-cong-nghe-ai-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    Object-fit:cover;
+}
+
+
+
+/*======================ctn__feature================================*/
+.ctn__feature{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 55px;
+    width:100%;
+    height: 850px;
+}
+
+/*==----------------------*/
+.ctn__feature__image{
+    background-image: url(/img/banner-tinh-nang.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    width:34%;
+    height:100%;
+}
+
+/*==----------------------*/
+.ctn__feature__content{
+    position: relative;
+    width: 60%;
+    height:100%;
+}
+
+.feature__title {
+    height: 10%;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 30% 20px 0;
+    font-size: 40px;   
+   
+}
+
+.feature__info {
+    height: 90%;
+    display: flex;
+    position: relative;
+}
+
+/*about__shopping*/
+.about__shopping {
+    width: 220px;
+    height: 220px;
+    list-style: none;
+    border-radius: 30px;
+    background-color: #f4efeb;
+    padding: 20px;
+    box-shadow: 0 1px 9px 2px #9e9e9e91;
+    position: absolute;
+    
+    z-index: 1;
+    animation-name: aboutshopping;
+ 
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: normal;
+    
+}
+
+@keyframes aboutshopping {
+    0%{top: 200px;left:120px}
+    25%{top: 50px;left:50px}
+    100%{top: 50px;left:50px}
+}
+
+
+
+.about__shopping__image {
+    background-image: url(/img/muasam.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    height: 30%;
+    width:30%;
+    margin: 0px auto;
+}
+
+.about__shopping__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.about__shopping__info {
+    
+    text-align: center;
+    color:#333333;
+    line-height: 1.6;
+}
+
+/*about try on clothes*/
+.about__tryonclothes {
+    width: 250px;
+    height: 250px;
+    list-style: none;
+    border-radius: 30px;
+    background-color: #f4efeb;
+    padding: 20px;
+    box-shadow: 0 1px 9px 2px #9e9e9e91;
+    position: absolute;
+    top: -5%;
+    z-index: 1;
+    animation-name: abouttryonclothes;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: normal;
+}
+
+@keyframes abouttryonclothes {
+    0%{left:100%}
+    25%{left:60%}
+    100%{left:60%}
+}
+
+.about__tryonclothes__image {
+    background-image: url(/img/thudo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    height: 56px;
+    width: 30px;
+    margin: 10px auto;
+
+}
+
+.about__tryonclothes__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.about__tryonclothes__info {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color:#333333;
+}
+
+/*--------------style----------------*/
+.about__style {
+    width: 300px;
+    height: 300px;
+    list-style: none;
+    border-radius: 30px;
+    background-color: #f4efeb;
+    padding: 30px;
+    box-shadow: 0 1px 9px 2px #9e9e9e91;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    z-index: 1;
+    animation-name: aboutstyle;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: normal;
+}
+
+@keyframes aboutstyle {
+    0%{top: 400px;left:500px}
+    25%{top:300px;left: 350px}
+    100%{top:300px;left: 350px}
+}
+
+.about__style__image {
+    background-image: url(/img/phongcach.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    height: 100px;
+    width: 65px;
+    margin: 0px auto;
+}
+
+.about__style__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.about__style__info {
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    color:#333333;
+    width: 100%;
+}
+
+.feature__background {
+    width: 40%;
+    height: 100%;
+    background-image: url(/img/tinh-nang-1.png);
+    background-repeat: no-repeat;
+    background: size;
+    position:absolute;
+    margin: 0 auto;
+    left: 25%;
+    top: -20px;
+}
+
+/*----------------card------------------*/
+
+:root {
+    --primary-color: #f2726a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ctn__card {
+    width: 100%;
+    height: 630px;
+    background-color: #fff;
+    background: linear-gradient(180deg,   #fff,#b5c4ca);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+@keyframes addopen {
+    0%  {height: 630px}
+    100% {height: 1130px}
+}   
+
+.open__card{
+    animation-name: addopen;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-delay: 0s;
+    height: 1130px;
+}
+
+
+@keyframes addclose {
+    0%  {height: 1130px}
+    100% {height: 630px}
+}   
+
+.close__card{
+    animation-name: addclose;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-delay: 0s;
+    height: 630px;
+}
+
+
+
+
+.ctn__card__title{
+    width: 100%;
+    height:100px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-size: 40px;
+    font-weight: 1000;
+    color: #000;
+    Text-shadow : 0 0 10px #fff;
+}
+
+.ctn__card-top{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ctn__card__add {
+    width: 100%;
+    height: 30px;
+    background-color: #b5c4ca;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.ctn__card__add i{
+    color: #000;
+}
+
+.ctn__card__add:hover{
+    background-color: #c7d2d7;
+}
+
+.ti-arrow-circle-down{
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.ti-arrow-circle-up{
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.ctn__card-bottom{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 300px;
+}
+
+.card {
+    background: #303030;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.card .class__img {
+    height: 120px;
+    width: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(32px);
+    transition: 0.5s;
+}
+
+.card .class__img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border:none;
+    transform: unset;
+}
+
+.card h2{
+    color:white;
+    margin-top: 30px;
+    padding : 10px 0;
+}
+
+.card p {
+    font-size: 20px;
+    color:var(--primary-color);
+    padding: 5px 0;
+}
+
+.card .social a i{
+    font-size: 25px;
+    margin: 10px 20px;
+    color:white;
+}
+
+.card .social a:hover i{
+    color: #f2726a;
+}
+.card button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border:2px solid var(--primary-color);
+
+}
+.card button:hover{
+    cursor: pointer;
+    color:white;
+    background-color:  #f2726a;
+}
+
+/*====================ctn-footer================*/
+.ctn__footer {
+    width: 100%;
+    height:500px;
+    background-color: #333;
+    list-style:none;
+}
+
+.ctn__footer__content {
+    width: 90%;
+    height: 100%;
+    padding: 40px 0 15px;
+    margin: 0 auto;
+}
+
+.ctn__footer .footer__title {
+    color: #f4efeb;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+} 
+/*---------------------------------------------*/
+.ctn__footer .footer__title_text {
+    width: 60%;
+}
+
+.ctn__footer .footer__icon {
+    width:20%;
+}
+
+/*----------------------------------------------*/
+.footer__sign_up{
+    margin:35px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.ctn__footer .sign_up__title {
+    color: #fff;
+    background-color: #a60505;
+    font-size: 18px;
+    padding: 10px 35px;
+    width: 136px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.ctn__footer .sign_up__title:hover {
+    cursor: pointer;
+}
+
+/*------------------sign_up_title-----------------*/
+.model{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+
+/*.model.open khác .model .open vì nó ưu tiên*/
+.model.open{
+    display: flex;
+}
+
+
+
+.model .ctn__model {
+    width: 60%;
+    height: 100%;
+    background-image: url(/img/retro1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    animation: modalFadein ease 1s;
+}
+
+@keyframes modalFadein {
+    from {
+       transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.ctn__model__header {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 0 78px;
+    padding-left: 190px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.model .ti-close {
+    
+    padding: 5px;
+}
+
+.model .ti-close:hover {
+    background-color: rgba(181, 181, 181, 0.5);
+    cursor: pointer;
+}
+
+.model .ctn__model__input{
+    display: grid;
+    height: 54%;
+}
+::placeholder{
+    color: white;
+}
+.model .ctn__model__input input{
+    margin: 10px 15%;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: rgba(255, 228 ,181 , 0.6);
+}
+
+.ctn__model__commit {
+    padding: 5px 4px;
+    font-size: 16px;
+    margin: 10px 15%;
+    background-color: rgba(255, 228 ,181 , 0.8);
+    border-radius: 10px;
+}
+
+.ctn__model__button{
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.ctn__model__button button {
+    margin: 0 20px;
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(255, 228 ,181);
+}
+
+.model .button__comeback {
+    cursor: pointer;
+}
+
+.ctn__model__connect {
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.connect__google,
+.connect__inta,
+.connect__facebook{
+    margin: 0 5px;
+}
+
+.instagram{
+    color: white;
+    width: 33px;
+    height:33px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+}
+
+.ti-google {
+    color: white;
+    background-color: #d24736;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.connect__facebook .ti-facebook{
+    color: white;
+    background-color: #4580d7;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/*------------------footer-menu--------------------*/
+.footer__menu {
+    display: flex;
+    justify-content: center;
+}
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px  20px;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.footer__menu a:hover {
+    color: #a60505;
+   	background-color: rgba(181, 181, 181, 0.5);
+    border-radius: 15px;
+}
+
+
+/*--------app--footer-------------------------------*/
+.footer__app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0 70px;
+}
+
+.app__store__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+
+.app__googleplay__footer {
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+}
+/*---------footer__address-------------*/
+.footer__address{
+    width:100%;
+}
+
+.footer__address__text {
+    color: white;
+    width:45%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*---------btn-backtop-------------*/
+.backtop{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    z-index: 2;
+}
+
+.backtop:hover{
+    cursor: pointer;
+}
+
+.backtop ul{
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/backtop.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    margin: 10px 0;
+}
+
+/*=============loading==================*/
+.ctn__loading__body {
+    position: fixed;
+    top:0;
+    right:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(181, 181, 181, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.ctn__loading__body.open__load {
+    animation-delay: 5s;
+    display: flex;
+}
+
+.ctn__loading {
+    animation: #fff linear 4s infinite;
+    
+    background-image: url(/img/F5S.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+.ctn__loading__content {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 14px solid #00CCFF;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate1 linear 2s infinite;
+}
+
+.ctn__loading__content::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 10px solid aquamarine;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: rotate2 linear 2s infinite;
+}
+
+
+
+@keyframes changecolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+
+
